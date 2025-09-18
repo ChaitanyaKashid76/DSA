@@ -18,5 +18,20 @@ public class Array2 {
 
         }
 
+        //Find Mxa element 
+          int[] arr3 = new int[5];
+        arr3[0] = 1;
+        arr3[1] = 2;
+        arr3[2] = 3;
+        arr3[3] = 4;
+        arr3[4] = 5;
+
+        int res = Integer.MIN_VALUE;
+        for (int i = 0; i < arr3.length; i++) {
+            if (arr3[i] > res) {
+                res = arr3[i];
+            }
+        }
+        System.out.println("Max element: " + res);
     }
 }
